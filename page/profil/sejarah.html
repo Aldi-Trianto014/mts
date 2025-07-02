@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ponpes Darussalam Sidoluhur</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,90 +16,91 @@
     <!-- Navbar Start -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md dark:bg-gray-900/30 dark:backdrop-blur-md dark:border-gray-700">
       <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 lg:px-20 py-4">
-        
+
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="assets/img/logo.png" class="h-20" alt="Flowbite Logo" />
+        <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assets/img/logo.png" class="h-20" alt="Flowbite Logo" />
         </a>
 
         <!-- Burger Button -->
-    <button id="openSidebar" type="button" class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-      </svg>
-    </button>
-
+        <button id="openSidebar" type="button" class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+          </button>
 
         <!-- Menu -->
-    <ul class="hidden lg:flex lg:flex-row lg:space-x-8 font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white/80 lg:bg-transparent lg:border-0 lg:mt-0 dark:bg-gray-800/50 dark:border-gray-700 dark:lg:bg-transparent">
-            
-            <!-- PROFIL -->
-            <li>
-              <button id="dropdownProfilButton" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
-                Profil
-                <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
-                </svg>
-              </button>
-              <div id="dropdownProfil" class="dropdown-content hidden w-full mt-2 lg:absolute lg:mt-0 bg-white text-black divide-y divide-gray-200 rounded-lg shadow lg:w-44">
-                <ul class="py-2 text-sm text-black">
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Sejarah</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Visi Misi</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Struktur</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Guru</a></li>
-                </ul>
-              </div>
-            </li>
+        <ul class="hidden lg:flex lg:flex-row lg:space-x-8 font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white/80 lg:bg-transparent lg:border-0 lg:mt-0 dark:bg-gray-800/50 dark:border-gray-700 dark:lg:bg-transparent">
 
-            <!-- PENDIDIKAN -->
-            <li>
-              <button id="dropdownPendidikanButton" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
-                Pendidikan
-                <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
-                </svg>
-              </button>
-              <div id="dropdownPendidikan" class="dropdown-content hidden w-full mt-2 lg:absolute lg:mt-0 bg-white text-black divide-y divide-gray-200 rounded-lg shadow lg:w-44">
-                <ul class="py-2 text-sm text-black">
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Madrasah Tsanawiyah</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Madrasah Aliyah</a></li>
-                </ul>
-              </div>
-            </li>
+          <!-- PROFIL -->
+          <li class="relative">
+            <button id="dropdownProfilButton" data-dropdown-toggle="dropdownProfil" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Profil
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownProfil" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="sejarah.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Sejarah</a></li>
+                <li><a href="visi.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Visi Misi</a></li>
+                <li><a href="struktur.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Struktur</a></li>
+                <li><a href="guru.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Guru</a></li>
+              </ul>
+            </div>
+          </li>
 
-            <!-- KEGIATAN -->
-            <li>
-              <button id="dropdownKegiatanButton" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
-                Kegiatan
-                <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
-                </svg>
-              </button>
-              <div id="dropdownKegiatan" class="dropdown-content hidden w-full mt-2 lg:absolute lg:mt-0 bg-white text-black divide-y divide-gray-200 rounded-lg shadow lg:w-44">
-                <ul class="py-2 text-sm text-black">
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Pramuka</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Muhadhoroh</a></li>
-                </ul>
-              </div>
-            </li>
+          <!-- PENDIDIKAN -->
+          <li class="relative">
+            <button id="dropdownPendidikanButton" data-dropdown-toggle="dropdownPendidikan" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Pendidikan
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownPendidikan" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="../pendidikan/mts.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Madrasah Tsanawiyah</a></li>
+                <li><a href="../pendidikan/ma.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Madrasah Aliyah</a></li>
+              </ul>
+            </div>
+          </li>
 
-            <!-- INFORMASI -->
-            <li>
-              <button id="dropdownInformasiButton" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
-                Informasi
-                <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
-                </svg>
-              </button>
-              <div id="dropdownInformasi" class="dropdown-content hidden w-full mt-2 lg:absolute lg:mt-0 bg-white text-black divide-y divide-gray-200 rounded-lg shadow lg:w-44">
-                <ul class="py-2 text-sm text-black">
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Pendaftaran</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white transition font-medium">Berita</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+          <!-- KEGIATAN -->
+          <li class="relative">
+            <button id="dropdownKegiatanButton" data-dropdown-toggle="dropdownKegiatan" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Kegiatan
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownKegiatan" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="../kegiatan/pramuka.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Pramuka</a></li>
+                <li><a href="../kegiatan/pidato.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Muhadhoroh</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- INFORMASI -->
+          <li class="relative">
+            <button id="dropdownInformasiButton" data-dropdown-toggle="dropdownInformasi" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Informasi
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownInformasi" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-black dark:text-black">
+                <li><a href="../informasi/daftar.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Pendaftaran</a></li>
+                <li><a href="../informasi/berita.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Berita</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </nav>
     <!-- Navbar End -->
 
@@ -110,7 +111,7 @@
       <!-- Close Button --> 
       <div class="flex justify-end p-4 mt-6 mr-4">
         <!-- Logo -->
-      <img src="assets/img/logo.png" alt="Logo" class="absolute top-7 left-4 h-14">
+      <img src="/assets/img/logo.png" alt="Logo" class="absolute top-7 left-4 h-14">
 
         <button id="closeSidebar">
           <!-- Heroicons X -->
@@ -128,10 +129,10 @@
           <details class="group">
             <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Profil</summary>
             <ul class="pl-4 py-1 space-y-1">
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Sejarah</a></li>
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Visi Misi</a></li>
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Struktur</a></li>
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Guru</a></li>
+              <li><a href="sejarah.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Sejarah</a></li>
+              <li><a href="visi.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Visi Misi</a></li>
+              <li><a href="struktur.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Struktur</a></li>
+              <li><a href="guru.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Guru</a></li>
             </ul>
           </details>
         </li>
@@ -141,8 +142,8 @@
           <details class="group">
             <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Pendidikan</summary>
             <ul class="pl-4 py-1 space-y-1">
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Madrasah Tsanawiyah</a></li>
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Madrasah Aliyah</a></li>
+              <li><a href="../pendidikan/mts.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Madrasah Tsanawiyah</a></li>
+              <li><a href="../pendidikan/ma.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Madrasah Aliyah</a></li>
             </ul>
           </details>
         </li>
@@ -152,8 +153,8 @@
           <details class="group">
             <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Kegiatan</summary>
             <ul class="pl-4 py-1 space-y-1">
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Pramuka</a></li>
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Muhadhoroh</a></li>
+              <li><a href="../kegiatan/pramuka.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Pramuka</a></li>
+              <li><a href="../kegiatan/pidato.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Muhadhoroh</a></li>
             </ul>
           </details>
         </li>
@@ -163,8 +164,8 @@
           <details class="group">
             <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Informasi</summary>
             <ul class="pl-4 py-1 space-y-1">
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Pendaftaran</a></li>
-              <li><a href="#" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Berita</a></li>
+              <li><a href="../informasi/daftar.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Pendaftaran</a></li>
+              <li><a href="../informasi/berita.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Berita</a></li>
             </ul>
           </details>
         </li>
@@ -173,6 +174,63 @@
     </div>
     <!-- Nav Mobile End -->
 
+<section class="w-full bg-white pt-35 px-4 sm:px-6 lg:px-20 py-16 text-black">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-3xl font-bold mb-16 text-center">Sejarah Darussalam</h2>
+
+    <!-- Timeline Container -->
+    <div class="relative ml-6 border-l-4 border-green-500 space-y-28">
+
+      <!-- Timeline Item -->
+      <div class="relative pl-10">
+        <!-- Dot -->
+        <span class="absolute left-[-0.625rem] top-1 w-4 h-4 bg-green-500 rounded-full"></span>
+        <h3 class="text-xl font-semibold">2015 – Awal Inisiatif</h3>
+        <p class="mt-4 text-gray-700 text-base leading-relaxed">
+          Masyarakat mulai merintis ide untuk mendirikan lembaga pendidikan berbasis keislaman di Sidoluhur.
+        </p>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="relative pl-10">
+        <span class="absolute left-[-0.625rem] top-1 w-4 h-4 bg-green-500 rounded-full"></span>
+        <h3 class="text-xl font-semibold">2017 – Gedung Puskesmas Jadi Sekolah</h3>
+        <p class="mt-4 text-gray-700 text-base leading-relaxed">
+          Bekas gedung puskesmas digunakan sebagai ruang belajar pertama MTSS Darussalam.
+        </p>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="relative pl-10">
+        <span class="absolute left-[-0.625rem] top-1 w-4 h-4 bg-green-500 rounded-full"></span>
+        <h3 class="text-xl font-semibold">2019 – Jumlah Siswa Bertambah</h3>
+        <p class="mt-4 text-gray-700 text-base leading-relaxed">
+          Antusiasme masyarakat meningkat, siswa semakin banyak, guru mulai bertambah.
+        </p>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="relative pl-10">
+        <span class="absolute left-[-0.625rem] top-1 w-4 h-4 bg-green-500 rounded-full"></span>
+        <h3 class="text-xl font-semibold">2023 – Menuju Digitalisasi</h3>
+        <p class="mt-4 text-gray-700 text-base leading-relaxed">
+          MTSS mulai menggunakan teknologi untuk mendukung kegiatan belajar, termasuk akses internet & media online.
+        </p>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="relative pl-10">
+        <span class="absolute left-[-0.625rem] top-1 w-4 h-4 bg-green-500 rounded-full"></span>
+        <h3 class="text-xl font-semibold">Masa Depan – Terus Berkembang</h3>
+        <p class="mt-4 text-gray-700 text-base leading-relaxed">
+          MTSS Darussalam berkomitmen untuk menjadi lembaga pendidikan yang unggul, berakhlak, dan adaptif terhadap zaman.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
         <!-- Footer Start -->
     <footer class="bg-white dark:bg-emerald-900 text-gray-600 dark:text-gray-300 text-sm">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -180,8 +238,8 @@
         <div class="md:flex md:justify-between">
           <!-- Logo dan Nama -->
           <div class="mb-6 md:mb-0 max-w-sm">
-            <a href="#" class="flex items-center space-x-3">
-              <img src="assets/img/logo.png" class="h-12" alt="Logo Ponpes" />
+            <a href="sejarah.html" class="flex items-center space-x-3">
+              <img src="/assets/img/logo.png" class="h-12" alt="Logo Ponpes" />
               <span class="text-lg font-bold text-gray-800 dark:text-white leading-tight">
                 Pondok Pesantren<br>Darussalam Sidoluhur
               </span>
@@ -193,7 +251,7 @@
             <div>
               <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Navigasi</h2>
               <ul class="space-y-2">
-                <li><a href="#" class="hover:underline">Beranda</a></li>
+                <li><a href="../../index.html" class="hover:underline">Beranda</a></li>
                 <li><a href="#" class="hover:underline">Profil</a></li>
                 <li><a href="#" class="hover:underline">Pendaftaran</a></li>
               </ul>
@@ -201,8 +259,8 @@
             <div>
               <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Program</h2>
               <ul class="space-y-2">
-                <li><a href="#" class="hover:underline">MTs</a></li>
-                <li><a href="#" class="hover:underline">MA</a></li>
+                <li><a href="../pendidikan/mts.html" class="hover:underline">MTs</a></li>
+                <li><a href="../pendidikan/ma.html" class="hover:underline">MA</a></li>
               </ul>
             </div>
             <div>
@@ -265,7 +323,7 @@
     <!-- Footer End -->
      
     <script src="js/script.js"></script>
-    <script src="js/navmobile.js"></script>
+    <script src="/js/navmobile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
 </body>

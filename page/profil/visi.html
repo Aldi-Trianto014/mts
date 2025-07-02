@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponpes Darussalam Sidoluhur</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+    
+    <!-- Navbar Start -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md dark:bg-gray-900/30 dark:backdrop-blur-md dark:border-gray-700">
+      <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 lg:px-20 py-4">
+
+        <!-- Logo -->
+        <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assets/img/logo.png" class="h-20" alt="Flowbite Logo" />
+        </a>
+
+        <!-- Burger Button -->
+        <button id="openSidebar" type="button" class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+          </button>
+
+        <!-- Menu -->
+        <ul class="hidden lg:flex lg:flex-row lg:space-x-8 font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white/80 lg:bg-transparent lg:border-0 lg:mt-0 dark:bg-gray-800/50 dark:border-gray-700 dark:lg:bg-transparent">
+
+          <!-- PROFIL -->
+          <li class="relative">
+            <button id="dropdownProfilButton" data-dropdown-toggle="dropdownProfil" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Profil
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownProfil" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="sejarah.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Sejarah</a></li>
+                <li><a href="visi.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Visi Misi</a></li>
+                <li><a href="struktur.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Struktur</a></li>
+                <li><a href="guru.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Guru</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- PENDIDIKAN -->
+          <li class="relative">
+            <button id="dropdownPendidikanButton" data-dropdown-toggle="dropdownPendidikan" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Pendidikan
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownPendidikan" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="../pendidikan/mts.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Madrasah Tsanawiyah</a></li>
+                <li><a href="../pendidikan/ma.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Madrasah Aliyah</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- KEGIATAN -->
+          <li class="relative">
+            <button id="dropdownKegiatanButton" data-dropdown-toggle="dropdownKegiatan" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Kegiatan
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownKegiatan" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="../kegiatan/pramuka.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Pramuka</a></li>
+                <li><a href="../kegiatan/pidato.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Muhadhoroh</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- INFORMASI -->
+          <li class="relative">
+            <button id="dropdownInformasiButton" data-dropdown-toggle="dropdownInformasi" class="flex items-center py-2 px-3 text-black dark:text-white cursor-pointer rounded-sm">
+              Informasi
+              <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+              </svg>
+            </button>
+            <div id="dropdownInformasi" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
+              <ul class="py-2 text-sm text-black dark:text-black">
+                <li><a href="../informasi/daftar.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Pendaftaran</a></li>
+                <li><a href="../informasi/berita.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Berita</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Nav Mobile Start -->
+    <!-- Sidebar Mobile Menu -->
+    <div id="mobileSidebar" class="fixed top-0 right-0 h-full w-1/3 bg-white text-black transform translate-x-full transition-transform duration-300 z-50 shadow-lg lg:hidden">
+
+      <!-- Close Button --> 
+      <div class="flex justify-end p-4 mt-6 mr-4">
+        <!-- Logo -->
+      <img src="/assets/img/logo.png" alt="Logo" class="absolute top-7 left-4 h-14">
+
+        <button id="closeSidebar">
+          <!-- Heroicons X -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Sidebar Menu List -->
+      <ul class="px-4 space-y-2 text-sm font-medium">
+
+        <!-- PROFIL -->
+        <li>
+          <details class="group">
+            <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Profil</summary>
+            <ul class="pl-4 py-1 space-y-1">
+              <li><a href="sejarah.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Sejarah</a></li>
+              <li><a href="visi.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Visi Misi</a></li>
+              <li><a href="struktur.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Struktur</a></li>
+              <li><a href="guru.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Guru</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <!-- PENDIDIKAN -->
+        <li>
+          <details class="group">
+            <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Pendidikan</summary>
+            <ul class="pl-4 py-1 space-y-1">
+              <li><a href="../pendidikan/mts.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Madrasah Tsanawiyah</a></li>
+              <li><a href="../pendidikan/ma.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Madrasah Aliyah</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <!-- KEGIATAN -->
+        <li>
+          <details class="group">
+            <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Kegiatan</summary>
+            <ul class="pl-4 py-1 space-y-1">
+              <li><a href="../kegiatan/pramuka.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Pramuka</a></li>
+              <li><a href="../kegiatan/pidato.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Muhadhoroh</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <!-- INFORMASI -->
+        <li>
+          <details class="group">
+            <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Informasi</summary>
+            <ul class="pl-4 py-1 space-y-1">
+              <li><a href="../informasi/daftar.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Pendaftaran</a></li>
+              <li><a href="../informasi/berita.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Berita</a></li>
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </div>
+    <!-- Nav Mobile End -->
+
+    <section class="w-full bg-white pt-35 py-16 px-4 lg:px-20">
+  <div class="max-w-screen-xl mx-auto">
+
+    <!-- Judul -->
+    <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-gray-800">
+      Visi & Misi
+    </h2>
+
+    <!-- Visi -->
+    <div class="mb-12">
+      <h3 class="text-xl font-semibold mb-4 text-green-700">Visi</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Menjadi suatu lembaga pendidikan yang mampu mencetak kader-kader umat, demi kemajuan agama, nusa, dan bangsa.
+      </p>
+    </div>
+
+    <!-- Misi -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-green-700">Misi</h3>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700 text-lg leading-relaxed">
+        <li>
+          Mewujudkan sarana pendidikan dengan mengedepankan agama sebagai pondasi dasar pendidikan, mencetak siswa-siswi yang berakhlakul karimah, dan mampu mengikuti perkembangan zaman.
+        </li>
+        <li>
+          Menyelenggarakan kegiatan pendidikan dalam rangka mengembangkan ilmu agama dan umum.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+        <!-- Footer Start -->
+    <footer class="bg-white dark:bg-emerald-900 text-gray-600 dark:text-gray-300 text-sm">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <!-- Grid Utama -->
+        <div class="md:flex md:justify-between">
+          <!-- Logo dan Nama -->
+          <div class="mb-6 md:mb-0 max-w-sm">
+            <a href="sejarah.html" class="flex items-center space-x-3">
+              <img src="/assets/img/logo.png" class="h-12" alt="Logo Ponpes" />
+              <span class="text-lg font-bold text-gray-800 dark:text-white leading-tight">
+                Pondok Pesantren<br>Darussalam Sidoluhur
+              </span>
+            </a>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+            <div>
+              <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Navigasi</h2>
+              <ul class="space-y-2">
+                <li><a href="../../index.html" class="hover:underline">Beranda</a></li>
+                <li><a href="#" class="hover:underline">Profil</a></li>
+                <li><a href="#" class="hover:underline">Pendaftaran</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Program</h2>
+              <ul class="space-y-2">
+                <li><a href="../pendidikan/mts.html" class="hover:underline">MTs</a></li>
+                <li><a href="../pendidikan/ma.html" class="hover:underline">MA</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Hubungi Kami</h2>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">WhatsApp</a></li>
+                <li><a href="#" class="hover:underline">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garis -->
+        <hr class="my-6 border-white-200 dark:border-white-700" />
+
+        <!-- Sosial + Copyright -->
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 dark:text-gray-400">
+            © 2025 <a href="#" class="hover:underline">Ponpes Darussalam Sidoluhur</a>. All rights reserved.
+          </span>
+          <div class="flex mt-4 space-x-5 sm:mt-0">
+            <!-- WA -->
+            <a href="#" class="text-gray-400 hover:text-white transition" title="WhatsApp">
+              <!-- Tempel SVG WA di sini -->
+              <svg width="24" height="24" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M480 256C480 379.712 379.712 480 256 480C211.92 480 170.814 467.268 136.159 445.28L32 480L66.7197 375.841C44.7323 341.186 32 300.08 32 256C32 132.288 132.288 32 256 32C379.712 32 480 132.288 480 256ZM331.463 383.553C223.599 391.494 123.334 292.571 137.307 175.331C141.676 138.679 184.047 118.102 205.62 132.765C208.828 134.946 217.751 164.163 217.097 184.449C216.953 188.9 214.271 192.746 210.515 195.138L197.641 203.337C191.702 207.12 188.888 214.361 191.039 221.067C208.437 275.311 237.812 310.777 291.414 327.461C298.072 329.533 305.176 326.567 308.823 320.623L314.314 311.67C318.074 305.54 325.476 302.63 332.287 304.939C352.429 311.766 372.424 321.128 374.61 326.943C381.801 348.926 360.153 381.441 331.463 383.553Z" />
+              </svg>
+            </a>
+            <!-- FB -->
+            <a href="#" class="text-gray-400 hover:text-white transition" title="Facebook">
+              <svg width="24" height="24" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M312 32C258.981 32 216 74.9807 216 128V200H136V264H216V480H280V264H360L376 200H280V128C280 110.327 294.327 96 312 96H376V32H312Z" />
+              </svg>
+            </a>
+            <!-- IG -->
+            <a href="#" class="text-gray-400 hover:text-white transition" title="Instagram">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M256,49.5c67.3,0,75.2,0.3,101.8,1.5c24.6,1.1,37.9,5.2,46.8,8.7c11.8,4.6,20.2,10,29,18.8c8.8,8.8,14.3,17.2,18.8,29   c3.4,8.9,7.6,22.2,8.7,46.8c1.2,26.6,1.5,34.5,1.5,101.8s-0.3,75.2-1.5,101.8c-1.1,24.6-5.2,37.9-8.7,46.8   c-4.6,11.8-10,20.2-18.8,29c-8.8,8.8-17.2,14.3-29,18.8c-8.9,3.4-22.2,7.6-46.8,8.7c-26.6,1.2-34.5,1.5-101.8,1.5   s-75.2-0.3-101.8-1.5c-24.6-1.1-37.9-5.2-46.8-8.7c-11.8-4.6-20.2-10-29-18.8c-8.8-8.8-14.3-17.2-18.8-29   c-3.4-8.9-7.6-22.2-8.7-46.8c-1.2-26.6-1.5-34.5-1.5-101.8s0.3-75.2,1.5-101.8c1.1-24.6,5.2-37.9,8.7-46.8   c4.6-11.8,10-20.2,18.8-29c8.8-8.8,17.2-14.3,29-18.8c8.9-3.4,22.2-7.6,46.8-8.7C180.8,49.7,188.7,49.5,256,49.5 M256,4.1   c-68.4,0-77,0.3-103.9,1.5C125.3,6.8,107,11.1,91,17.3c-16.6,6.4-30.6,15.1-44.6,29.1c-14,14-22.6,28.1-29.1,44.6   c-6.2,16-10.5,34.3-11.7,61.2C4.4,179,4.1,187.6,4.1,256c0,68.4,0.3,77,1.5,103.9c1.2,26.8,5.5,45.1,11.7,61.2   c6.4,16.6,15.1,30.6,29.1,44.6c14,14,28.1,22.6,44.6,29.1c16,6.2,34.3,10.5,61.2,11.7c26.9,1.2,35.4,1.5,103.9,1.5   s77-0.3,103.9-1.5c26.8-1.2,45.1-5.5,61.2-11.7c16.6-6.4,30.6-15.1,44.6-29.1c14-14,22.6-28.1,29.1-44.6   c6.2-16,10.5-34.3,11.7-61.2c1.2-26.9,1.5-35.4,1.5-103.9s-0.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2   c-6.4-16.6-15.1-30.6-29.1-44.6c-14-14-28.1-22.6-44.6-29.1c-16-6.2-34.3-10.5-61.2-11.7C333,4.4,324.4,4.1,256,4.1L256,4.1z" /><path d="M256,126.6c-71.4,0-129.4,57.9-129.4,129.4S184.6,385.4,256,385.4S385.4,327.4,385.4,256S327.4,126.6,256,126.6z M256,340   c-46.4,0-84-37.6-84-84s37.6-84,84-84c46.4,0,84,37.6,84,84S302.4,340,256,340z"></path><circle cx="390.5" cy="121.5" r="30.2"></circle>
+              </svg>
+            </a>
+            <!-- YT -->
+            <a href="#" class="text-gray-400 hover:text-white transition" title="YouTube">
+              <svg width="24" height="24" viewBox="0 0 20 14" fill="currentColor" xmlns="http://www.w3.org/1999/xlink">
+        <title>youtube [#168]</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+            <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#currentColor">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]" /><path>
+                        </g>
+                    </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+     
+    <script src="js/script.js"></script>
+    <script src="/js/navmobile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+</body>
+</html>
