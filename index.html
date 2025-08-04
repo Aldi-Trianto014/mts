@@ -43,10 +43,8 @@
             </button>
             <div id="dropdownProfil" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-                <li><a href="page/profil/sejarah.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Sejarah</a></li>
-                <li><a href="page/profil/visi.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Visi Misi</a></li>
-                <li><a href="page/profil/struktur.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Struktur</a></li>
-                <li><a href="page/profil/guru.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Guru</a></li>
+                <li><a href="page/profil/sejarah.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Sejarah & Visi Misi</a></li>
+                <li><a href="page/profil/struktur.html" class="block px-4 py-2 text-black hover:bg-green-600 hover:text-white transition font-medium">Struktur & Guru</a></li>
               </ul>
             </div>
           </li>
@@ -129,10 +127,8 @@
           <details class="group">
             <summary class="cursor-pointer px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">Profil</summary>
             <ul class="pl-4 py-1 space-y-1">
-              <li><a href="page/profil/sejarah.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Sejarah</a></li>
-              <li><a href="page/profil/visi.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Visi Misi</a></li>
-              <li><a href="page/profil/struktur.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Struktur</a></li>
-              <li><a href="page/profil/guru.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Guru</a></li>
+              <li><a href="page/profil/sejarah.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Sejarah & Visi Misi</a></li>
+              <li><a href="page/profil/struktur.html" class="block px-3 py-1 rounded hover:bg-green-600 hover:text-white">Struktur & Guru</a></li>
             </ul>
           </details>
         </li>
@@ -175,55 +171,63 @@
     <!-- Nav Mobile End -->
 
     <!-- Hero Start -->
-    <section class="relative bg-cover bg-center bg-no-repeat bg-[url('assets/img/IMG-20231002-WA0018-01.jpeg')] bg-gray-700 bg-blend-multiply">
-      <div class="pt-32 lg:pt-40 sm:pt-32 w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-20 text-left pb-24 lg:pb-56 fade-in-up">
-        
-        <!-- Judul -->
-        <h1 class="mb-4 text-4xl md:text-5xl lg:text-6xl font-bold leading-snug tracking-tight text-white font-quicksand">
-          Pondok Pesantren<br>Darussalam Sidoluhur
-        </h1>
+<section class="relative h-[90vh] bg-cover bg-center bg-no-repeat bg-[url('assets/img/IMG-20231002-WA0018-01.jpeg')] bg-gray-700 bg-blend-multiply">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
 
-        <!-- Subtext -->
-        <p class="mb-8 text-lg lg:text-xl font-medium text-white font-quicksand">
-          Darussalam Sidoluhur Islamic Boarding School
-        </p>
+  <!-- Kontainer flex + animasi -->
+  <div class="relative z-10 h-full flex items-center">
+    <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-20 text-left fade-in-up">
+      
+      <!-- Judul -->
+      <h1 class="mb-4 text-4xl md:text-5xl lg:text-6xl font-bold leading-snug tracking-tight text-white font-quicksand">
+        Pondok Pesantren<br>Darussalam Sidoluhur
+      </h1>
 
-        <!-- Tombol -->
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0">
-          <a href="#daftar" class="w-fit inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white border border-white rounded-lg hover:bg-white hover:text-black transition">
-            Ayo Daftar
-          </a>
-        </div>
+      <!-- Subtext -->
+      <p class="mb-8 text-lg lg:text-xl font-medium text-white font-quicksand">
+        Darussalam Sidoluhur Islamic Boarding School
+      </p>
+
+      <!-- Tombol -->
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0">
+        <a href="#daftar" class="w-fit inline-flex justify-center items-center py-3 px-5 text-sm sm:text-base font-medium text-white border border-white rounded-lg hover:bg-white hover:text-black transition">
+          Ayo Daftar
+        </a>
       </div>
-    </section>
-    <!-- Hero End -->
 
-    <!-- Spoiler -->
-   <section class="grid grid-cols-2 lg:grid-cols-4 w-full text-white text-center">
-  <!-- Guru -->
-  <div class="cursor-pointer bg-[#1f2937]/60 hover:opacity-90 transition p-4 h-28 flex flex-col items-center justify-center">
-    <h3 class="text-3xl font-bold">10</h3>
-    <p class="text-sm uppercase tracking-wide">Guru</p>
-  </div>
-
-  <!-- Murid -->
-  <div class="cursor-pointer bg-[#4b5563]/60 hover:opacity-90 transition p-4 h-28 flex flex-col items-center justify-center">
-    <h3 class="text-3xl font-bold">50</h3>
-    <p class="text-sm uppercase tracking-wide">Murid</p>
-  </div>
-
-  <!-- Pendidikan -->
-  <div class="cursor-pointer bg-[#065f46]/60 hover:opacity-90 transition p-4 h-28 flex flex-col items-center justify-center">
-    <h3 class="text-3xl font-bold">2</h3>
-    <p class="text-sm uppercase tracking-wide">Program Pendidikan</p>
-  </div>
-
-  <!-- Prestasi -->
-  <div class="cursor-pointer bg-[#7c3aed]/60 hover:opacity-90 transition p-4 h-28 flex flex-col items-center justify-center">
-    <h3 class="text-3xl font-bold">20</h3>
-    <p class="text-sm uppercase tracking-wide">Prestasi</p>
+    </div>
   </div>
 </section>
+<!-- Hero End -->
+
+
+    <!-- Spoiler -->
+    <section class="grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-4 md:grid-cols-4 w-full text-white text-center">
+    <!-- Guru -->
+    <div class="cursor-pointer bg-[#e0cda9]/90 hover:opacity-90 transition p-4 h-25 flex flex-col items-center justify-center">
+      <h3 class="text-3xl font-bold">10</h3>
+      <p class="text-sm uppercase tracking-wide">Guru</p>
+    </div>
+
+    <!-- Murid -->
+    <div class="cursor-pointer bg-blue-600/60 hover:opacity-90 transition p-4 h-25 flex flex-col items-center justify-center">
+      <h3 class="text-3xl font-bold">50</h3>
+      <p class="text-sm uppercase tracking-wide">Murid</p>
+    </div>
+
+    <!-- Pendidikan -->
+    <div class="cursor-pointer bg-[#065f46]/60 hover:opacity-90 transition p-4 h-25 flex flex-col items-center justify-center">
+      <h3 class="text-3xl font-bold">2</h3>
+      <p class="text-sm uppercase tracking-wide">Program Pendidikan</p>
+    </div>
+
+    <!-- Prestasi -->
+    <div class="cursor-pointer bg-[#7c3aed]/60 hover:opacity-90 transition p-4 h-25 flex flex-col items-center justify-center">
+      <h3 class="text-3xl font-bold">20</h3>
+      <p class="text-sm uppercase tracking-wide">Prestasi</p>
+    </div>
+    </section>
 
 <!-- === Section Kegiatan === -->
 <section class="w-full min-h-screen px-4 sm:px-6 lg:px-20 py-16 bg-gray-50 text-black space-y-20">
@@ -233,53 +237,34 @@
     <h2 class="text-4xl font-bold">Kegiatan</h2>
   </div>
 
-  <!-- Div 2: Galeri kiri, teks kanan -->
-  <div class="grid lg:grid-cols-2 gap-10 items-center">
-    
-    <!-- Galeri Looping Kiri -->
-   <div class="flex gap-4 w-max animate-marquee">
-  <img src="https://source.unsplash.com/random/800x600/?scouting&sig=1" class="h-64 rounded-xl object-cover" />
-  <img src="https://source.unsplash.com/random/800x600/?students&sig=2" class="h-64 rounded-xl object-cover" />
-  <img src="https://source.unsplash.com/random/800x600/?outdoor&sig=3" class="h-64 rounded-xl object-cover" />
-  <img src="https://source.unsplash.com/random/800x600/?camping&sig=4" class="h-64 rounded-xl object-cover" />
-  <!-- Duplikat -->
-  <img src="https://source.unsplash.com/random/800x600/?scouting&sig=1" class="h-64 rounded-xl object-cover" />
-  <img src="https://source.unsplash.com/random/800x600/?students&sig=2" class="h-64 rounded-xl object-cover" />
-  <img src="https://source.unsplash.com/random/800x600/?outdoor&sig=3" class="h-64 rounded-xl object-cover" />
-  <img src="https://source.unsplash.com/random/800x600/?camping&sig=4" class="h-64 rounded-xl object-cover" />
+  <!-- Modal Zoom -->
+<div id="imgModal" class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50">
+  <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl" />
+</div>
+
+ <!-- Galeri Slider -->
+<div class="galeri-wrapper overflow-hidden w-full relative">
+  <div class="slider-container overflow-x-auto w-full" style="scrollbar-width: none; -ms-overflow-style: none;">
+    <div class="slider-track flex gap-4 w-max">
+      <!-- Asli -->
+      <img src="assets/img/IMG_20211220_112623.JPG" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/IMG-20231002-WA0018-01.jpeg" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/IMG_20230215_074803-01.jpeg" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/IMG_20230724_130152-01.jpeg" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/WhatsApp Image 2023-02-10 at 10.35.30.jpeg" class="h-64 rounded-xl object-cover" />
+
+      <!-- Duplikat buat looping -->
+      <img src="assets/img/IMG_20211220_112623.JPG" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/IMG-20231002-WA0018-01.jpeg" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/IMG_20230215_074803-01.jpeg" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/IMG_20230724_130152-01.jpeg" class="h-64 rounded-xl object-cover" />
+      <img src="assets/img/WhatsApp Image 2023-02-10 at 10.35.30.jpeg" class="h-64 rounded-xl object-cover" />
+    </div>
+  </div>
 </div>
 
 
-    <!-- Deskripsi Teks Kanan -->
-    <div class="text-lg leading-relaxed">
-      <p><strong>Pramuka</strong> di MTSS Darussalam adalah kegiatan ekstrakurikuler unggulan yang membentuk karakter mandiri, tangguh, dan peduli sosial sejak dini.</p>
-    </div>
-  </div>
-
-  <!-- Div 3: Mirror - teks kiri, galeri kanan -->
-  <div class="grid lg:grid-cols-2 gap-10 items-center">
-    
-    <!-- Deskripsi Teks Kiri -->
-    <div class="text-lg leading-relaxed order-2 lg:order-1">
-      <p><strong>Muhadhoroh</strong> adalah latihan berbicara di depan umum yang menjadi sarana melatih kepercayaan diri dan kemampuan retorika santri.</p>
-    </div>
-
-    <!-- Galeri Looping Kanan -->
-    <div class="overflow-hidden w-full relative order-1 lg:order-2">
-      <div class="flex gap-4 w-max animate-marquee">
-        <img src="https://source.unsplash.com/random/800x600/?publicspeaking" class="h-64 rounded-xl object-cover" />
-        <img src="https://source.unsplash.com/random/800x600/?islamic" class="h-64 rounded-xl object-cover" />
-        <img src="https://source.unsplash.com/random/800x600/?speech" class="h-64 rounded-xl object-cover" />
-        <img src="https://source.unsplash.com/random/800x600/?students" class="h-64 rounded-xl object-cover" />
-        <!-- Duplikat -->
-        <img src="https://source.unsplash.com/random/800x600/?publicspeaking" class="h-64 rounded-xl object-cover" />
-        <img src="https://source.unsplash.com/random/800x600/?islamic" class="h-64 rounded-xl object-cover" />
-        <img src="https://source.unsplash.com/random/800x600/?speech" class="h-64 rounded-xl object-cover" />
-        <img src="https://source.unsplash.com/random/800x600/?students" class="h-64 rounded-xl object-cover" />
-      </div>
-    </div>
-
-  </div>
+  
 </section>
 
 <!-- === Section Berita === -->
@@ -421,5 +406,6 @@
     <script src="js/navmobile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <script src="js/kegiatan.js"></script>
 </body>
 </html>

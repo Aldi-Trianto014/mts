@@ -4,26 +4,36 @@
 
 
 @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
-
-  .fade-in-up {
-    animation: fadeInUp 1s ease-out both;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-
- @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
 }
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out both;
+  animation-delay: 0.2s; /* opsional */
+}
+
+
+
+
 
 .animate-marquee {
   animation: marquee 20s linear infinite;
+}
+
+
+/* Biar scrollbarnya bener-bener ilang */
+  .galeri-wrapper::-webkit-scrollbar,
+  .galeri-wrapper div::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider-container {
+  scroll-behavior: smooth;
 }
